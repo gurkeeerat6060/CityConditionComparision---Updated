@@ -1,0 +1,24 @@
+﻿@page
+@model StartModel
+@{
+    ViewData["Title"] = "City Weather Comparision";
+}
+
+<h1>...</h1>
+
+<form method="get" action="/Data" runat="server" border="0" cellpadding="0" cellspacing="0" style="width:100%;float:left">
+    <div class="input-group">
+        <input type="text" name="firstCity" class="form-control" placeholder="New Zealand" />
+        <input type="text" name="secondCity" class="form-control" placeholder="Melbourne" />
+        <input type="submit" value="Compare" class="btn btn-primary" style="background:black;float:left" />
+    </div>
+</form>
+
+<style>
+    body {
+        background-image: url('Images/rainybg.jpeg');
+        font-size: 12pt;
+        margin: 0;
+        padding: 0;
+    }
+</style>

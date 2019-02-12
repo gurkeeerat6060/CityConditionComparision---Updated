@@ -1,0 +1,79 @@
+﻿@page
+@model DataModel
+@{
+    ViewData["Title"] = "Data";
+}
+<h1>...</h1>
+
+<style>
+    #card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        align-self: center;
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 44px 0 rgba(0,0,0,0.2);
+    }
+
+    .container {
+        padding: 2px 16px;
+    }
+</style>
+
+<style>
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        border-radius: 5px; /* 5px rounded corners */
+    }
+
+    img {
+        border-radius: 5px 5px 0 0;
+    }
+</style>
+
+<style>
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .title {
+        color: grey;
+        font-size: 16px;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 22px;
+        color: black;
+    }
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="card" style="width:100%;height:289px;float:left;background:#FFF;opacity:initial;">
+    <img src=@Model.firstCityIcon style="width:20%">
+    <h3>@Model.firstCityName, @Model.firstCityCountry</h3>
+    <p class="title">@Model.firstCityTemperature K, @Model.firstCityPressure mb</p>
+    <a href=@Model.firstCityMapURL target="_blank"><i class="fa fa-map-marker"></i></a>
+</div>
+
+<div class="card" style="width:100%;height:289px;float:right;background:#FFF;opacity:initial;">
+    <img src=@Model.secondCityIcon style="width:20%">
+    <h3>@Model.secondCityName, @Model.secondCityCountry</h3>
+    <p class="title">@Model.secondCityTemperature K, @Model.secondCityPressure mb</p>
+    <a href=@Model.secondCityMapURL target="_blank"><i class="fa fa-map-marker"></i></a>
+</div>
+
+<style>
+    body {
+        background-image: url('Images/rainybg.jpeg');
+        font-size: 12pt;
+        margin: 0;
+        padding: 0;
+    }
+</style>
